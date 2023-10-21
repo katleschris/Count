@@ -1,6 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root{
+  --pink: rgb(244, 143, 177);
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+}
+@keyframes background-pan {
+  from{
+    background-position: 0% center;
+  }
+  to{
+    background-position: -200% center;
+  }
+}
+
+#root{
+  background-color: rgb(10, 10, 10);
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  overflow: hidden;
+  place-items: center;
+}
+
+h1{
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size:x-small;
+  margin: 0;
+  padding: 20px;
   text-align: center;
+}
+
+h1 > .cool {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--pink),
+    var(--purple),
+    var(--violet),
+    var(--pink)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
