@@ -156,12 +156,12 @@ function Calculator() {
           <div className="current-operand">{formatOperand(currentOperand)}</div>
         </div>
         <button
-          className="span-two"
+          className="span-two clear"
           onClick={() => dispatch({ type: ACTIONS.CLEAR })}
         >
           AC
         </button>
-        <button onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
+        <button className='del'  onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
           DEL
         </button>
         <OperationButton operation="÷" dispatch={dispatch} />
@@ -180,7 +180,7 @@ function Calculator() {
         <DigitButton digit="." dispatch={dispatch} />
         <DigitButton digit="0" dispatch={dispatch} />
         <button
-          className="span-two"
+          className="span-two equal"
           onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
         >
           =

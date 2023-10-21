@@ -1,6 +1,6 @@
 :root{
-  --pink: rgb(244, 143, 177);
   --purple: rgb(123, 31, 162);
+  --pink: #ff1458 ;
   --violet: rgb(103, 58, 183);
 }
 @keyframes background-pan {
@@ -13,7 +13,7 @@
 }
 
 #root{
-  background-color: rgb(10, 10, 10);
+  background: #acbaca;
   display: grid;
   height: 100vh;
   width: 100vw;
@@ -32,7 +32,7 @@ h1{
   text-align: center;
 }
 
-h1 > .cool {
+h1 > .cool > .cool-text {
   animation: background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
