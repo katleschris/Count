@@ -8,7 +8,7 @@ export default function DigitButton({ dispatch, digit }) {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "#c9d5e0",
+    background: "#acbaca",
     borderRadius: "15px",
     boxShadow: "10px 10px 10px -5px rgba(0, 0, 0, 0.15),inset 7px 7px 5px rgba(255, 255, 255, 0.5), -7px -7px 18px rgba(255, 255, 255, 0.35), inset -1px -1px 5px rgba(0,0,0,0.2)"
   };
