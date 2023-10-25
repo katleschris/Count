@@ -13,7 +13,7 @@
 }
 
 #root{
-  background: #acbaca;
+  /* background: #acbaca; */
   display: grid;
   height: 100vh;
   width: 100vw;
@@ -23,13 +23,15 @@
 }
 
 h1{
-  color: whitesmoke;
+  color: #fff;
+  opacity: 0.8;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 400;
   font-size:x-small;
   margin: 0;
   padding: 20px;
   text-align: center;
+  text-shadow: 1px 1px rgba(0,0,0,0.1);
 }
 
 h1 > .cool > .cool-text {
