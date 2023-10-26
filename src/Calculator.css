@@ -33,7 +33,7 @@
 .calculator-grid > button:hover,
 .calculator-grid > button:focus {
   background-color: #c9d5e0 ;
-  
+  outline: none;
 }
 
 .span-two {
