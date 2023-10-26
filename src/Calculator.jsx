@@ -10,6 +10,7 @@ export const ACTIONS = {
   CLEAR: "clear",
   DELETE_DIGIT: "delete-digit",
   EVALUATE: "evaluate",
+  SQUARE_ROOT: "square-root",
 };
 
 // Reducer function that handles calculator state transitions based on actions
@@ -101,6 +102,14 @@ function reducer(state, { type, payload }) {
         operation: null,
         currentOperand: evaluate(state),
       };
+    case ACTIONS.SQUARE_ROOT:
+      if (state.currentOperand == null) return state;
+        const squareRoot = Math.sqrt(parseFloat(state.currentOperand));
+        return {
+          ...state,
+          currentOperand: squareRoot.toString(),
+          overwrite: true,
+        };
   }
 }
 
@@ -180,11 +189,13 @@ function Calculator() {
         <DigitButton digit="." dispatch={dispatch} />
         <DigitButton digit="0" dispatch={dispatch} />
         <button
-          className="span-two equal"
+          className="equal"
           onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
         >
           =
         </button>
+        <OperationButton operation="√" dispatch={() => dispatch({ type: ACTIONS.SQUARE_ROOT })} />
+
       </div>
     </div>
   );
