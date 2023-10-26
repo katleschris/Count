@@ -1,6 +1,6 @@
-# Calculator App README
+# Interactive Calculator with Background
 
-This repository contains a simple calculator app built using React. The app allows you to perform basic arithmetic operations, such as addition, subtraction, multiplication, and division. It features a user-friendly interface and provides real-time calculation results.
+This React application is a simple interactive calculator with a visually appealing interactive background. It allows you to perform basic arithmetic operations and even calculate square roots. The background is dynamic and responds to your mouse movement, creating an engaging user experience. The app allows you to perform basic arithmetic operations, such as addition, subtraction, multiplication, and division. It features a user-friendly interface and provides real-time calculation results.
 
 ## Table of Contents
 
@@ -18,6 +18,8 @@ This repository contains a simple calculator app built using React. The app allo
 - Clear button to reset the calculator
 - Delete button to remove digits from the current operand
 - Responsive and user-friendly interface
+- Square root calculation.
+- Eye-catching interactive background that follows your mouse movement.
 
 ## Installation
 
@@ -50,6 +52,13 @@ npm start
 ```
 
 This will launch the app in your default web browser. You can now perform arithmetic calculations using the calculator interface.
+
+- To perform calculations, click the digit buttons to enter numbers and the operation buttons (+, -, *, ÷) to choose the desired operation.
+- Use the "DEL" button to delete the last entered digit.
+- Click "AC" to clear the calculator and start over.
+- The "=" button evaluates the expression and displays the result.
+- The "√" button calculates the square root of the current number.
+- Enjoy the interactive background that responds to your mouse movement.
 
 ## Technologies Used
 
